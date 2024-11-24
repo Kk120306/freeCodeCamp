@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Football Tournament Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Football Tournament Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the tournament</p>
+
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" 
+      for="name">Name:</label>
+    <input id="name" type="text" name="name" required placeholder="Enter your name">
+    </fieldset>
+
+    <fieldset>
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" name="email" required placeholder="Enter your email">
+    </fieldset>
+
+    <fieldset>
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" name="age" min="10" max="100" required placeholder="Enter your age">
+    </fieldset>
+
+  <fieldset>
+    <label id="Position"  for="dropdown">Position: </label>
+    <select required id="dropdown">
+      <option value="Select">(Pick Choice)</option>
+      <option value="Attack"> Attack </option>
+      <option value="Midfield"> Midfield </option>
+      <option value="Defense"> Defense </option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <label for="Participate" class="space"> Will You Participate Again?</label>
+    <div><label for="Yes"> <input checked  class="inline" id="Yes" type="radio" name="fun?" value="def">Definitely</label></div>
+    <div><label for="maybe"> <input id="maybe" class="inline" type="radio" name="fun?" value="myb">Maybe</label></div>
+    <div><label for="No"> <input id="No" type="radio" class="inline" name="fun?" value="no">No</label></div>
+
+  </fieldset>
+  <fieldset>
+    <label for="improv" class="space">What Should We Improve On?</label>
+    <div><input name="imp" class="inline" type="checkbox" value="size" > Size of pitch</div>
+    <div><input name="imp" class="inline" type="checkbox" value="length"> Length of game</div>
+    <div><input name="imp" class="inline" type="checkbox" value="teams"> Forming teams</div>
+  </fieldset>
+  <fieldset>
+    <legend>Any Other Feedback?</legend>
+    <textarea id="others" placeholder="Type Here..."></textarea>
+  
+  </fieldset>
+   <button id="submit">Submit</button>
+  
+
+    </form>
+    
+
+  </body>
+
+
+
+</html>
