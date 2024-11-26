@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>Technical Documentation Java</title>
+  </head>
+
+  
+  <body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>JAVA Document</header>
+      <ul>
+        <li><a class="nav-link active" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+        <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+        <li><a class="nav-link" href="#Hello_world">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+        <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
+      </ul>
+    </nav>
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Java is a versatile, object-oriented programming language widely used for developing desktop, web, and mobile applications. Created in 1995 by Sun Microsystems, Java is known for its "write once, run anywhere" philosophy, which allows programs to run on any device with a Java Virtual Machine (JVM).</p>
+      <p>Its syntax is similar to C++ but includes simplified features to reduce common programming errors. Java's extensive libraries and frameworks make it a go-to choice for developers working on enterprise-level projects. With its focus on portability, security, and performance, Java remains a cornerstone in the software development industry.</p>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <header>What you should already know</header>
+      <p>To understand this technical document, you must know some of the following:</p>
+      <ul>
+        <li><strong>Basic Programming Concepts:</strong> Understanding variables, loops, and conditional statements is essential before learning Java.</li>
+        <li><strong>Familiarity with Other Languages:</strong> Experience with languages like Python, C, or C++ can ease your transition into Java.</li>
+        <li><strong>Object-Oriented Programming (OOP):</strong> Knowledge of OOP principles such as classes, objects, inheritance, and polymorphism is highly beneficial.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>JavaScript and Java</header>
+      <p>Although their names suggest a connection, JavaScript and Java are fundamentally different programming languages designed for distinct purposes. Java is a statically typed, object-oriented language used primarily for building large-scale applications, while JavaScript is a dynamically typed scripting language mainly used for web development.</p>
+    </section>
+
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <p>The "Hello World" program is a traditional first step in learning any programming language, and Java is no exception. This is how its written:</p>
+      <code>
+        class HelloWorld { public static void main(String[] args) {
+        System.out.println("Hello, World!");}
+      }</code>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>In Java, variables are used to store data that can be manipulated during program execution. Java requires developers to declare a variable's type, such as int, double, or String, ensuring type safety and reducing runtime errors.</p>
+      <p>Java supports different scopes for variables, including local, instance, and static, which determine their accessibility. Understanding how to declare and use variables effectively is crucial for writing efficient and maintainable Java code.</p>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+      <header>Declaring variables</header>
+      <p>In Java, variables are declared with a specific data type, ensuring strong type safety and reducing runtime errors.</p>
+      <ul>
+        <li><strong>Basic Declaration: </strong>A variable is declared by specifying its type followed by its name, e.g., <code>int x = 42;</code>, which creates an integer variable initialized to 42.</li>
+        <code>int x = 42; 
+double pi = 3.14; 
+String message = "Hello, Java!"; 
+</code>
+        <li><strong>Local Variables: </strong>Variables declared inside a method or block are local and accessible only within that scope.</li>
+        <li><strong>Instance Variables: </strong>These are declared inside a class but outside any method, making them accessible to all methods within the class.
+        <code>public void displayMessage() {
+    int localNumber = 10; 
+    System.out.println("Local number: " + localNumber);
+}</code>
+        </li>
+        <li><strong>Static Variables: </strong>Declared with the static keyword, these variables belong to the class rather than any specific instance, making them shared across all objects.
+Java's strict variable declaration rules enforce reliability, ensuring code is robust and less prone to unintended behavior.</li>
+    </section>
+    <section class="main-section" id="if...else_statement">
+      <header>if...else statement</header>
+      <p>The if...else statement in Java is a fundamental control structure used for decision-making. It evaluates a boolean expression and executes one block of code if the condition is true, or another block if the condition is false.</p>
+      <p> For example, 
+        <code>if (score >= 50) { System.out.println("Pass"); } else { System.out.println("Fail"); } 
+          </code>
+          determines whether a score meets a passing threshold. Java also supports else if clauses for handling multiple conditions, making it a versatile tool for flow control. Mastering if...else statements is essential for writing dynamic and responsive programs.</p>
+    </section>
+    </div>
+  </main>
+  <footer>
+      <p>All documentation was generated using <a target="_blank" class="source" href="https://www.chatgpt.com">ChatGPT</a></p>
+    </footer>
+  </body>
+
+</html>
